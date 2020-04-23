@@ -15,4 +15,5 @@ RUN apt update && \
 	apt install -y hdf5-tools libhdf5-dev libhdf5-serial-dev && \
 	pip3 install pandas==0.24.2 requests numpy && \
 	pip3 install scipy statsmodels && \
+	pip3 install statsmodels && \
     HDF5_DIR=/usr/lib/x86_64-linux-gnu/hdf5/serial/ pip3 install tables
