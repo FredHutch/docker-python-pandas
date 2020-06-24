@@ -24,7 +24,7 @@ RUN cd /usr/local/ && \
 	python3 --version && \
 	curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
 	python3 get-pip.py
-	apt install -y hdf5-tools libhdf5-dev libhdf5-serial-dev && \
+RUN apt install -y hdf5-tools libhdf5-dev libhdf5-serial-dev && \
 	pip3 install pandas==1.0.3 requests numpy && \
 	pip3 install scipy statsmodels && \
 	HDF5_DIR=/usr/lib/x86_64-linux-gnu/hdf5/serial/ pip3 install tables
