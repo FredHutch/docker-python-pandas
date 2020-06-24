@@ -15,13 +15,14 @@ RUN apt update && \
 RUN cd /usr/local/ && \
 	mkdir python && \
 	apt install wget && \
-	wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz && \
+	wget --quiet https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz && \
 	tar -xzf Python-3.7.4.tgz && \
 	cd Python-3.7.4 && \
 	./configure && \
 	make && \
 	make install && \
 	python3 --version && \
+	apt install -y curl && \
 	curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
 	python3 get-pip.py
 RUN apt install -y hdf5-tools libhdf5-dev libhdf5-serial-dev && \
