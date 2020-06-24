@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 MAINTAINER sminot@fredhutch.org
 
 # Install
-#  - Python 3.8
+#  - Python 3.7
 #  - HDF5
 #  - pandas
 #  - requests
