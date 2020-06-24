@@ -11,7 +11,7 @@ MAINTAINER sminot@fredhutch.org
 #  - statsmodels
 #  - tables
 RUN apt update && \
-	apt install -y build-essential python3 python3-pip && \
+	apt install -y build-essential python3.7 python3-pip && \
 	apt install -y hdf5-tools libhdf5-dev libhdf5-serial-dev && \
 	pip3 install pandas==1.0.3 requests numpy && \
 	pip3 install scipy statsmodels && \
