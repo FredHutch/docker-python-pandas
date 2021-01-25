@@ -17,5 +17,5 @@ RUN apt update && \
 	apt install -y python3 python3-pip
 
 RUN pip3 install pandas==1.2.1 requests numpy h5py && \
-	pip3 install scipy statsmodels fastdist && \
+	pip3 install scipy statsmodels fastdist numba && \
 	HDF5_DIR=/usr/lib/x86_64-linux-gnu/hdf5/serial/ pip3 install tables
