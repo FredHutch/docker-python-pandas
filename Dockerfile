@@ -11,6 +11,7 @@ MAINTAINER sminot@fredhutch.org
 #  - statsmodels
 #  - tables
 #  - h5py
+ENV DEBIAN_FRONTEND noninteractive
 RUN apt update && \
 	apt install -y build-essential hdf5-tools libhdf5-dev libhdf5-serial-dev && \
 	apt install -y zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev wget libbz2-dev && \
