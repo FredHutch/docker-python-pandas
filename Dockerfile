@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM quay.io/hdc-workflows/ubuntu:20.04
 MAINTAINER sminot@fredhutch.org
 
 # Install
