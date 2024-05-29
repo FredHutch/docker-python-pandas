@@ -1,4 +1,4 @@
-FROM quay.io/hdc-workflows/python
+FROM quay.io/hdc-workflows/python:1b4acdc
 MAINTAINER sminot@fredhutch.org
 
 RUN pip3 install pandas==1.2.1 requests numpy==1.23.5 h5py && \
